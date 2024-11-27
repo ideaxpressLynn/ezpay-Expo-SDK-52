@@ -1,36 +1,53 @@
 {
   "expo": {
-    "name": "ezpay-app",
-    "slug": "ezpay-app",
-    "version": "1.0.0",
+    "name": "裕利PAY",
+    "slug": "AndroideZPAY",
+    "version": "1.0.15",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#015D63"
+    },
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.kmnb6842.AndroideZPAY",
+      "buildNumber": "19"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#015D63",
+      "translucent": false
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#015D63"
+      },
+      "package": "com.kmnb6842.AndroideZPAY",
+      "versionCode": 16
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9df9b54c-1876-4c5c-90c3-64aa6c5cab55"
+      }
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#015D63"
         }
       ]
     ],
